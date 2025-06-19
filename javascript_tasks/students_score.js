@@ -25,6 +25,9 @@ function passMarks(students)
     });
     console.log(pass);
 }
-console.log("Students with high score",highMarks(students));
-console.log("Students with avg score",avgMarks(students));
-console.log("Students with pass score",passMarks(students));
+var hscore=highMarks(students);
+var ascore=avgMarks(students);
+var pscore=passMarks(students)
+console.log("Students with high score",hscore);
+console.log("Students with avg score",ascore);
+console.log("Students with pass score",pscore);
