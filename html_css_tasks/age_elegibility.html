@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Age elegibility</title>
+    </head>
+    <body>
+        <h1>AGE ELEGIBILITY</h1>
+        <p>Enter your name</p>
+        <input type="text" id="name" placeholder="Enter your name here...">
+        <p>Enter your age</p>
+        <input type="number" id="age" placeholder="Enter your age here....">
+        <button onclick="calc()">Get result</button>
+        <p id="output"></p>
+        <script>
+            function calc()
+            {
+                var name=document.getElementById("name").value;
+                let age=document.getElementById("age").value;
+                if (age>=18){
+                    var result="Elegible";
+                    document.getElementById("output").textContent=result;
+                }
+                else{
+                    var result="Not elegible";
+                    document.getElementById("output").textContent=result;
+                }
+            }
+        </script>
+        <style>
+            h1{
+                font-size: 50px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+            input{
+                text-align: center;
+            }
+            button{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+        </style>
+    </body>
+</html>
